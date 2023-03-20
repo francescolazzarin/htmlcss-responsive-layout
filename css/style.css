@@ -82,3 +82,33 @@
     background-color: orange;
     height: 330px; 
 }
+.about_us{
+    max-width: 60%;
+    height:500px;
+    background-color:blue;
+    margin: 70px auto;
+}
+.bg_orange{
+    background-color: orange;
+    width: 93%;
+    height: 500px;
+    margin:0 auto;
+}
+.max_w70{
+   width: 70%;
+}
+.bg_green{
+    background-color: green;
+}
+.bg_yellow{
+    background-color: yellow;
+}
+.max_w30{
+    width: 30%;
+}
+.info_inizia{
+    height:400px;
+    width: 29%;
+    margin: 20px auto 0 auto;
+}
+
