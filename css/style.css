@@ -106,9 +106,28 @@
 .max_w30{
     width: 30%;
 }
+.inizia{
+    margin: 20px auto 0px auto;
+}
 .info_inizia{
     height:400px;
     width: 29%;
-    margin: 20px auto 0 auto;
+
 }
 
+footer{
+    min-height: 60px;
+    background-color: grey;
+}
+.bg_red{
+    width: 21%;
+    background-color: red;
+    min-height: 30px;
+    margin:30px auto 50px auto;
+}
+footer .bg_green{
+    width: 19%;
+    background-color: green;
+    min-height: 30px;
+    margin: 0px auto 30px auto;
+}
