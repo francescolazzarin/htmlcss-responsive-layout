@@ -3,16 +3,25 @@
     margin: 0;
     padding: 0;
 }
+.btn{
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10%;
+}
+.text_center{
+    text-align: center;
+}
+
 .flex{
     display: flex;
 }
 .flex.ul_cont{
-    max-width: 60%;
+    max-width: calc(100% * (2/3));
     margin: 0 auto;;
     justify-content: space-between;
 }
 .nav_header{
-    max-height: 60px;
+
     background-color: blue;  
 }
 .nav_header ul li{
@@ -22,56 +31,180 @@
     justify-content: space-between;
     align-items: center;
 }
-.max_w60{
-    max-width: 60%;
+/* main */
+.flex.max_w60{
+    max-width: calc(100% * (2/3));
     flex-wrap: wrap;
     margin: 30px  auto;
     justify-content: space-between;
+     
 }
+.card_info{
+    max-width:60%;
+    padding-top:20px;    
+}
+.card_info.max_w60 {
+    margin-left: 10px;
+}
+.card_info.text_center{
+    margin: 0 auto;
+}
+.flex.cont_card .card_info_img{
+    width: 40%;
+}
+.card_info_img img{
+    width: 100%;
+    padding-top: 30px;
+}
+
 .bg_first{
     background-color:#B5DDFF;
 }
 .primo{
-    width:66%;
-    min-height: 270px;
+    max-width:calc(100% * (2/3) );
+    margin-bottom: 20px;
+   
 }
-.secondo,.terzo,.quarto,.quinto{
-    width: 33%;
-    min-height: 270px;
+.max_w30{
+    max-width: calc(100% * (1/3) );
+    margin-bottom:20px;
+
+}
+h2{
+    font-size:1.4rem;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+.icona{
+    
+    font-size: 65px;
+    margin:0 auto ;
+    color: yellow;
+}
+.btn.first_sect{
+    max-width: 50%;  
+    margin-top: 20px;  
+}
+.btn.first_sect i{
+    color: white;
 }
 .bg_purple{
     background-color: blueviolet;
+    
 }
 .second_sect{
     max-width: 46%;
     margin: 0 auto;
+   
 }
-.prima_col{
+.prima_col, .seconda_col{
     width:50%;
-    background-color: orange;
-    min-height: 730px;
-}
-.seconda_col{
     width: 50%;
-    background-color: orange;
-    min-height: 730px;
+    
+}
+.prima_col .img_seconda_sect img{
+    max-width: 100%;
+}
+.img_seconda_sect{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.bgw{
+    max-width:  90%;
+    background-color: white;
+    margin-top: 230px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.bgw .img_seconda_sect{
+    max-width: 90%;
+    margin: 20px auto;
+}
+.bgw .img_seconda_sect img{
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+.bgw .img_seconda_sect  button{
+    border-radius: 50%;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bgw .img_seconda_sect  button i{
+    font-size: 20px;
+    
 }
 .terza_sect{
     min-height: 920px;
+    margin-top: 50px;
+}
+.center{
+    text-align: center;
 }
 .titolo{
-    min-height: 150px;
+    max-width: 60%;
+    margin:0 auto;
 }
-.flex_col{
+.terza_sect .titolo .center{
+    margin-bottom: 40px;
+}
+h1{
+    margin-bottom: 40px;
+}
+.flex.wrap{
     display: flex;
-    min-height: 720px;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 60%;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
-.linea{
-    min-height: 220px ;
+.img_seconda_sect{
+    border-radius: 50%;
 }
-
+.flex.wrap .flex.linea.bg_purple{
+    max-width: 100%;
+    background-color: purple ;
+    margin-bottom: 1.5rem;
+    
+}
+.img_terza_sect.mrg_t30.mrg_b30{
+    max-width:25%;
+    border: 1px solid;
+    border-radius:50%;
+}
+.img_terza_sect.test_1,.img_terza_sect.test_2,.img_terza_sect.test_3{
+    background-size: contain; 
+    background-repeat: no-repeat;
+    
+}
+.linea.bg_purple{
+    max-width: 100%;
+    background-color: purple;
+}
+.dp_ib{
+    display: inline-block;
+}
+.info_test{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.img_terza_sect.test_1{
+    background-image: url(../img/testimonial1.jpg);
+}
+.img_terza_sect.test_2{
+    background-image: url(../img/testimonial2.jpg)
+}
+.img_terza_sect.test_3{
+    background-image: url(../img/testimonial3.jpg);
+}
+.mrg_t30{
+    margin-top: 1.9rem;
+}
+.mrg_b{
+    margin-bottom: 30px;
+}
 .linea_uno,.linea_due{
     width: 60%;
     margin: 20px auto;
@@ -103,31 +236,30 @@
 .bg_yellow{
     background-color: yellow;
 }
-.max_w30{
-    width: 30%;
-}
 .inizia{
     margin: 20px auto 0px auto;
+    height: 490px;
 }
 .info_inizia{
-    height:400px;
+    
     width: 29%;
 
 }
 
 footer{
-    min-height: 60px;
+    min-height: 180px;
     background-color: grey;
 }
 .bg_red{
     width: 21%;
     background-color: red;
     min-height: 30px;
-    margin:30px auto 50px auto;
+    margin: 30px auto;
+    
 }
 footer .bg_green{
     width: 19%;
     background-color: green;
     min-height: 30px;
-    margin: 0px auto 30px auto;
+    margin: 20px auto;
 }
