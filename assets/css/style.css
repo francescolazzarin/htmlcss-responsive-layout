@@ -36,6 +36,9 @@ button{
 .w-50{
     width: 50%;
 }
+.w-60{
+    width: 60%;
+}
 .w-70{
     width: 70%;
 }
@@ -67,3 +70,43 @@ nav{
 .ul-destra li button{
     background-color: var(--bianco);
 }
+.ul-destra li i{
+    display: none;
+}
+
+
+
+
+        /* MEDIA QUERY */
+        
+@media screen and (max-width:480px) {
+            /* HEADER */
+    .ul-destra li a,.ul-destra li button{
+         display: none;
+    }
+    .ul-destra{
+        justify-content: flex-end;
+    }
+    .ul-destra li i{
+        display: inline-block;
+        color: var(--bianco);
+    }
+            
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+        /* HEADER */
+    header nav.w-70{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .ul-destra li a,.ul-destra li button{
+        display: none;
+    }
+    .ul-destra{
+        justify-content: flex-end;
+    }
+    .ul-destra li i{
+        display: inline-block;
+        color: var(--bianco);
+    }
+ }
