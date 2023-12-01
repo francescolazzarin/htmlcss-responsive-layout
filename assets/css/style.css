@@ -33,6 +33,9 @@ button{
 .flex{
     display: flex;
 }
+.w-40{
+    width: 40%;
+}
 .w-50{
     width: 50%;
 }
@@ -42,19 +45,40 @@ button{
 .w-70{
     width: 70%;
 }
+
 .centrato{
     margin-inline: auto;
 }
 .bg-blu{
     background-color: var(--blu);
 }
-
-
+.bg-azzurro{
+    background-color: var(--azzurro);
+    border-radius: 10px;
+}
+.color-white{
+    color:var(--bianco);
+}
+.text-center{
+    text-align: center;
+}
+.pad-sm{
+    padding: 20px;    
+}
         /* GENERALI */
 nav{
     padding: 0.5rem;
     justify-content: space-between;
 }
+h4{
+    margin-block: 1.5rem;
+    color: var(--blu);
+}
+p{
+    margin-bottom: 1rem;
+    line-height: 160%;
+}
+
 
 
 
@@ -73,10 +97,34 @@ nav{
 .ul-destra li i{
     display: none;
 }
+section.get-demo{
+    padding-block: 2rem;
+}
+.get-demo .container{
+    flex-wrap: wrap;
+    justify-content:space-between;
+    row-gap: 20px;
+}
 
-
-
-
+.card.testo-img{
+    flex-basis: calc(100% / 3 * 2);
+}
+.card{
+    flex-basis: calc(100% / 3 - 20px);
+    min-height: 40vh;
+}
+.card i.top{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--blu);
+}
+.phone{
+    align-self: flex-end;
+    height: 80%;
+}
+.phone img{
+    height: 100%;
+}
         /* MEDIA QUERY */
         
 @media screen and (max-width:480px) {
@@ -91,7 +139,13 @@ nav{
         display: inline-block;
         color: var(--bianco);
     }
-            
+            /* MAIN */
+    .container.flex,.flex.card{
+        flex-direction: column;
+    }
+    .testo-img .w-60,.phone{
+        width: 100%;
+    }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
         /* HEADER */
@@ -108,5 +162,15 @@ nav{
     .ul-destra li i{
         display: inline-block;
         color: var(--bianco);
+    }
+        /* MAIN */
+    .flex.card{
+        flex-direction: column;
+    }
+    .flex.card .w-60{
+        width: 100%;
+    }
+    .phone{
+        align-self: flex-start;
     }
  }
