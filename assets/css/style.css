@@ -43,6 +43,9 @@ button{
 .space-btwn{
     justify-content: space-between;
 }
+.w-15{
+    width: 15%;
+}
 .w-30{
     width: 30%;
 }
@@ -95,6 +98,16 @@ button{
 .border-rad-m{
     border-radius: 20px;
 }
+.relative{
+    position: relative;
+}
+.align-flex-end{
+    align-self: flex-end;
+}
+
+
+
+
         /* GENERALI */
 nav{
     padding: 0.5rem;
@@ -109,8 +122,13 @@ p{
 section{
     padding-block: 2rem;
 }
-
-
+.about-us h2{
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+.about-us p:nth-child(2){
+    margin-block: 3rem;
+}
 
 
 .ul-destra{
@@ -146,18 +164,16 @@ section{
     color: var(--blu);
 }
 .phone,.phone img{
-    align-self: flex-end;
     height: 25vh;
 }
 .planning .container{
     min-height: 70vh;
 }
-.app{
-    align-self: flex-end;
-}
+
 .app figure,.app figure img{
    height: 30vh;
 }
+ 
 .testimonials h2{
     color: var(--viola);
 }
@@ -167,7 +183,7 @@ section{
 .test{
     height: 20vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
 }
 .test-1{
@@ -178,6 +194,18 @@ section{
 }
 .test-3{
     background-image:url(../img/testimonial3.jpg);
+}
+
+.about-us-img{
+    background-image: url(../img/about.jpg);
+    height: 15vh;
+}
+i.absolute{
+    position: absolute;
+    font-size: 3rem;
+    color: var(--viola);
+    right: 0;
+    top: 0;
 }
         /* MEDIA QUERY */
         
@@ -213,6 +241,15 @@ section{
     }
     .features .card-testo{
         flex-basis: 100%;
+    }
+    .about-us .flex{
+        flex-direction: column;
+    }
+    .about-us .flex .w-70{
+        width: 100%;
+    }
+    .about-us .w-15{
+        width: 60%;
     }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
