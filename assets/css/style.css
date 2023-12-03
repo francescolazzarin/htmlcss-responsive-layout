@@ -209,8 +209,10 @@ section{
     }
     .test{
         width: 50%;
-        align-self: center;
-      
+        align-self: center; 
+    }
+    .features .card-testo{
+        flex-basis: 100%;
     }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -246,5 +248,7 @@ section{
     .phone{
         align-self: flex-start;
     }
-   
+    .features .card-testo{
+        flex-basis:calc(50% - 20px);
+    }
  }
