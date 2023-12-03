@@ -27,11 +27,15 @@ button{
     --viola:#9792E4;
     --azzurro:#B5DDFF;
     --bianco:#ffffff;
+    --viola:#9792E4;
 }
 
       /* UTILITIES */
 .flex{
     display: flex;
+}
+.space-btwn{
+    justify-content: space-between;
 }
 .w-40{
     width: 40%;
@@ -45,7 +49,6 @@ button{
 .w-70{
     width: 70%;
 }
-
 .centrato{
     margin-inline: auto;
 }
@@ -56,6 +59,12 @@ button{
     background-color: var(--azzurro);
     border-radius: 10px;
 }
+.bg-viola{
+    background-color: var(--viola);
+}
+.bg-bianco{
+    background-color: var(--bianco);
+}
 .color-white{
     color:var(--bianco);
 }
@@ -65,10 +74,15 @@ button{
 .pad-sm{
     padding: 20px;    
 }
+.cerchio{
+    border-radius: 50%;
+}
+.border-rad-m{
+    border-radius: 20px;
+}
         /* GENERALI */
 nav{
     padding: 0.5rem;
-    justify-content: space-between;
 }
 h4{
     margin-block: 1.5rem;
@@ -102,7 +116,6 @@ section.get-demo{
 }
 .get-demo .container{
     flex-wrap: wrap;
-    justify-content:space-between;
     row-gap: 20px;
 }
 
@@ -115,15 +128,21 @@ section.get-demo{
 }
 .card i.top{
     font-size: 3rem;
-    margin-bottom: 1rem;
     color: var(--blu);
 }
-.phone{
+.phone,.phone img{
     align-self: flex-end;
-    height: 80%;
+    height: 30vh;
 }
-.phone img{
-    height: 100%;
+.planning .container{
+    min-height: 70vh;
+    padding-block: 2rem;
+}
+.app{
+    align-self: flex-end;
+}
+.app figure,.app figure img{
+   height: 30vh;
 }
         /* MEDIA QUERY */
         
@@ -140,6 +159,9 @@ section.get-demo{
         color: var(--bianco);
     }
             /* MAIN */
+    .get-demo .container{
+        width: 90%;
+    }
     .container.flex,.flex.card{
         flex-direction: column;
     }
@@ -164,9 +186,16 @@ section.get-demo{
         color: var(--bianco);
     }
         /* MAIN */
+    .get-demo .container{
+        width: 90%;
+    }
     .flex.card{
         flex-direction: column;
     }
+    h4{
+        margin-block: 1rem;
+    }
+
     .flex.card .w-60{
         width: 100%;
     }
