@@ -34,8 +34,17 @@ button{
 .flex{
     display: flex;
 }
+.wrap{
+    flex-wrap: wrap;
+}
+.dir-col{
+    flex-direction: column;
+}
 .space-btwn{
     justify-content: space-between;
+}
+.w-30{
+    width: 30%;
 }
 .w-40{
     width: 40%;
@@ -71,6 +80,9 @@ button{
 .text-center{
     text-align: center;
 }
+.gap{
+    gap: 20px;
+}
 .pad-sm{
     padding: 20px;    
 }
@@ -84,15 +96,16 @@ button{
 nav{
     padding: 0.5rem;
 }
-h4{
+h2,h3,h4{
     margin-block: 1.5rem;
-    color: var(--blu);
 }
 p{
     margin-bottom: 1rem;
     line-height: 160%;
 }
-
+section{
+    padding-block: 2rem;
+}
 
 
 
@@ -111,20 +124,19 @@ p{
 .ul-destra li i{
     display: none;
 }
-section.get-demo{
-    padding-block: 2rem;
-}
-.get-demo .container{
-    flex-wrap: wrap;
-    row-gap: 20px;
+.get-demo h4{
+    color: var(--blu);
 }
 
-.card.testo-img{
+
+.testo-img{
     flex-basis: calc(100% / 3 * 2);
 }
-.card{
+.testo{
     flex-basis: calc(100% / 3 - 20px);
-    min-height: 40vh;
+}
+.card{
+    min-height: 30vh;
 }
 .card i.top{
     font-size: 3rem;
@@ -132,17 +144,33 @@ section.get-demo{
 }
 .phone,.phone img{
     align-self: flex-end;
-    height: 30vh;
+    height: 25vh;
 }
 .planning .container{
     min-height: 70vh;
-    padding-block: 2rem;
 }
 .app{
     align-self: flex-end;
 }
 .app figure,.app figure img{
    height: 30vh;
+}
+.testimonials h2{
+    color: var(--viola);
+}
+.test{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.test-1{
+    background-image: url(../img/testimonial1.jpg);  
+}
+.test-2{
+    background-image: url(../img/testimonial2.jpg);
+}
+.test-3{
+    background-image:url(../img/testimonial3.jpg);
 }
         /* MEDIA QUERY */
         
@@ -159,14 +187,23 @@ section.get-demo{
         color: var(--bianco);
     }
             /* MAIN */
-    .get-demo .container{
+    .container{
         width: 90%;
     }
     .container.flex,.flex.card{
         flex-direction: column;
     }
-    .testo-img .w-60,.phone{
+    .testo-img .w-60,.phone,.app,.strategic{
         width: 100%;
+    }
+    .card-test{
+        flex-direction: column;
+        text-align: center;
+    }
+    .test{
+        min-height: 100px;
+        width: 40%;
+        align-self: center;
     }
 }
 @media screen and (min-width:481px) and (max-width:768px) {
@@ -186,20 +223,23 @@ section.get-demo{
         color: var(--bianco);
     }
         /* MAIN */
-    .get-demo .container{
+    .container{
         width: 90%;
     }
-    .flex.card{
+    .flex.card,.planning .container{
         flex-direction: column;
     }
     h4{
         margin-block: 1rem;
     }
 
-    .flex.card .w-60{
+    .flex.card .w-60,.app,.strategic{
         width: 100%;
     }
     .phone{
         align-self: flex-start;
+    }
+    .w-30.test{
+        min-width: 30%;
     }
  }
