@@ -139,8 +139,8 @@ section{
 .ul-destra li a{
     color: var(--bianco);
 }
-.ul-destra li button{
-    background-color: var(--bianco);
+.ul-destra li:last-child a{
+    color: black;
 }
 .ul-destra li i{
     display: none;
@@ -151,7 +151,7 @@ section{
 
 
 .card-testo-img{
-    flex-basis: calc(100% / 3 * 2);
+    flex-basis: calc(100% / 3 * 2 - 10px);
 }
 .card-testo{
     flex-basis: calc(100% / 3 - 20px);
